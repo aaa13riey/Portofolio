@@ -1,177 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ari's Blog (っˆڡˆς)</title>
+  <meta charset="UTF-8">
+  <title>Belajar HTML</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"> 
+
+  <!-- Style internal CSS -->
   <style>
     body {
-      background-color: #fff0f5;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      color: #75475b;
-      margin: 0;
-      padding: 0;
+      background-color: #f0f8ff;
+      font-family: Arial, sans-serif;
+      margin: 20px;
     }
 
-    header {
-      background-color: #ffe4f0;
-      padding: 20px;
-      text-align: center;
-      border-bottom: 3px dashed #f2a2c0;
-    }
-
-    header h1 {
-      color: #e87bb2;
-      font-size: 2em;
-      margin: 0;
+    h1, h2 {
+      color: darkblue;
     }
 
     p {
-      margin: 20px;
-      text-align: center;
-      font-size: 1em;
-      line-height: 1.6;
-    }
-
-    i {
-      color: #9c6997;
-    }
-
-    h2 {
-      text-align: center;
-      color: #e87bb2;
-      background-color: #ffe4f0;
-      padding: 10px;
-      margin: 30px auto 10px;
-      width: 200px;
-      border-radius: 20px;
-      font-size: 1.2em;
-    }
-
-    img {
-      display: block;
-      margin: 20px auto;
-      border: 5px dotted #ffcde4;
-      border-radius: 20px;
-    }
-
-    table {
-      margin: 0 auto 40px;
-      border-collapse: collapse;
-      width: 80%;
-      max-width: 600px;
-      box-shadow: 0 0 15px #f3cde5;
+      color: #333;
     }
 
     table, th, td {
-      border: 2px solid #d78bb3;
-      text-align: center;
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 8px;
     }
 
     th {
-      background-color: #ffe4f0;
-      color: #a84d8c;
-      padding: 12px;
-    }
-
-    td {
-      background-color: #fff8fc;
-      padding: 10px;
-    }
-
-    footer {
-      text-align: center;
-      font-size: 0.9em;
-      padding: 10px;
-      color: #a97a95;
-    }
-
-    a:link {
-      color: green;
-      background-color: transparent;
-      text-decoration: none;
-    }
-
-    a:visited {
-      color: pink;
-      background-color: transparent;
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: rgb(242, 8, 8);
-      background-color: transparent;
-      text-decoration: underline;
-    }
-
-    a:active {
-      color: yellow;
-      background-color: transparent;
-      text-decoration: underline;
-    }
-
-    h3 {
-      text-align: center;
-      color: #e87bb2;
-      background-color: #ffe4f0;
-      padding: 10px;
-      margin: 30px auto 10px;
-      width: 200px;
-      border-radius: 20px;
-      font-size: 1.2em;
+      background-color: #dfefff;
     }
   </style>
 </head>
+
 <body>
-  <header>
-    <h1>𓆝 𓆟 𓆞 𓆝 𓆟 Ari's Blog "( – ⌓ – ) ꩜ .ᐟ𓆝 𓆟 𓆞 𓆝 𓆟 </h1>
-  </header>
 
-  <p><i>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. lorem10"</i></p>
+  <!-- Judul halaman -->
+  <h1>Belajar HTML Dasar</h1>
+  <hr>
 
+  <!-- Paragraf -->
+  <h2>Paragraf</h2>
+  <p>Ini merupakan paragraf pertama <b>HTML</b> dalam pembuatan website.</p>
+  <p>HTML adalah bahasa standar untuk membuat halaman web. Dengan HTML, kita bisa menambahkan <i>style</i>, gambar, tautan, dan banyak elemen lainnya.</p>
+
+  <!-- Formatting -->
+  <h2>Formatting Teks</h2>
   <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eligendi velit accusantium ipsum, veritatis quaerat assumenda, minus ratione quidem quos id iusto corporis voluptatibus sequi, unde et necessitatibus tempora!
-    Optio officia nesciunt tempora ipsum hic minus dicta necessitatibus? Veniam quo eligendi sequi perspiciatis temporibus non repellendus officiis quod ea corrupti?
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, quisquam!...
+    <strong>Ini teks tebal.</strong>
+    <em>Ini teks miring.</em>
+    <mark>Ini teks ditandai.</mark>
+    <del>Ini teks dicoret.</del>
+    <ins>Ini teks disisipkan.</ins>
+  </p>
+  <p>Contoh superscript: 10<sup>2</sup> dan subscript: H<sub>2</sub>O</p>
+
+  <!-- Blockquote -->
+  <h2>Blockquote</h2>
+  <blockquote cite="https://www.w3schools.com">
+    "saya suka w3school"
+  </blockquote>
+
+  <!-- Quotation & Citation -->
+  <h2>Quotation dan Citation</h2>
+  <p>Kata W3Schools: <q>saya suka anime!</q></p>
+  <p>Belajar dari <cite>W3Schools.com</cite> sangat membantu bagi pemula.</p>
+
+  <!-- Komentar -->
+  <h2>Komentar HTML</h2>
+  <!-- Ini adalah komentar. Tidak akan terlihat di browser. -->
+  <p>(Lihat kode sumber untuk melihat komentar HTML)</p>
+
+  <!-- Warna -->
+  <h2>Warna Teks</h2>
+  <p style="color: red;">Teks ini berwarna merah (menggunakan nama warna).</p>
+  <p style="color: #00aaff;">Teks ini berwarna biru muda (menggunakan kode hex).</p>
+
+  <!-- Link -->
+  <h2>Hyperlink</h2>
+  <p>
+    Kunjungi 
+    <a href="https://www.w3schools.com" target="_blank">W3Schools</a> 
+    untuk belajar HTML lebih lanjut.
   </p>
 
-  <h2>𓇼 ⋆.˚ 𓆉 𓆝 𓆡⋆.˚ 𓇼</h2>
+  <!-- Gambar -->
+  <h2>Gambar</h2>
+  <img src="img/ari.jpg" alt="Logo W3Schools" width="200">
 
-  <img src="img/kkkgif.gif" alt="Cute Image Here~" width="300" height="300" />
-
+  <!-- Tabel -->
+  <h2>Tabel</h2>
   <table>
     <tr>
-      <th>🍚 Name</th>
-      <th>💸 Price</th>
-      <th>⭐ Rate</th>
+      <th>Nama</th>
+      <th>Umur</th>
     </tr>
     <tr>
-      <td>Nasi Goreng</td>
-      <td>10K - 20K</td>
-      <td>Enak bgtttt</td>
+      <td>Ari</td>
+      <td>17</td>
     </tr>
     <tr>
-      <td>Dimsum</td>
-      <td>15K - 35K</td>
-      <td>Ini juga enak hehe</td>
+      <td>Wisnu</td>
+      <td>18</td>
     </tr>
   </table>
 
-  <h3 style="text-align: center; font-size: 1.3em; color: #e87bb2; margin-top: 40px;">🍥 List Anime That I Watched 🍥</h3>
-  <br>
-  <ul style=" padding: 0; max-width: 400px; margin: 0 auto; font-size: 1em;">
-    <li style="background-color: #ffeef7; margin: 10px 0; padding: 10px 20px; border-radius: 20px; box-shadow: 0 2px 6px #f3cde5;">Natsume Yuujinchou</li>
-    <li style="background-color: #ffeef7; margin: 10px 0; padding: 10px 20px; border-radius: 20px; box-shadow: 0 2px 6px #f3cde5;"> Death Note</li>
-    <li style="background-color: #ffeef7; margin: 10px 0; padding: 10px 20px; border-radius: 20px; box-shadow: 0 2px 6px #f3cde5;"> Fate Series</li>
-    <li style="background-color: #ffeef7; margin: 10px 0; padding: 10px 20px; border-radius: 20px; box-shadow: 0 2px 6px #f3cde5;"> Noragami</li>
+  <!-- List -->
+  <h2>Daftar Tidak Berurutan (Unordered List)</h2>
+  <ul>
+    <li>Beras</li>
+    <li>Minyak</li>
+    <li>Sayur</li>
   </ul>
 
-  <p>
-    <a href="https://www.mangabats.com/">if u like reading manga, manhwa, etc!!!</a>
-  </p>
+  <h2>Daftar Berurutan (Ordered List)</h2>
+  <ol>
+    <li>Cuci beras</li>
+    <li>Masukkan ke rice cooker</li>
+    <li>Tambahkan air</li>
+    <li>Nyalakan rice cooker</li>
+  </ol>
 
-  <footer>
-    ⸜(｡˃ ᵕ ˂ )⸝♡ Thank you for visiting~ baii
-  </footer>
 </body>
 </html>
